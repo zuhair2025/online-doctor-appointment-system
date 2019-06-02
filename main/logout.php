@@ -1,0 +1,12 @@
+<?php
+session_start();
+unset($_SESSION["adminId"]);
+unset($_SESSION["adminName"]);
+unset($_SESSION["adminPosition"]);
+unset($_SESSION["doctorId"]);
+unset($_SESSION["doctorName"]);
+unset($_SESSION["userId"]);
+unset($_SESSION["userName"]);
+session_destroy();
+header('Location:../index.php');
+?>
